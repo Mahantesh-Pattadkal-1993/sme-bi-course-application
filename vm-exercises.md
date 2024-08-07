@@ -18,20 +18,23 @@
 
 #### Learning Objective
 
-*One measurable learning objective that this exercise assesses*
+*Perform Value Lookup to get product details in orders table*
 
 #### Context
 
-*3 - 4 sentence description of why it’s important to learn how to do this task (linking back to the learning objective). Explain how this would be used in a real-life situation. Why is it useful, what problem does it solve?*
+*Let's explore the concept of value lookup. You have two tables: the data table and the dictionary table. The data table includes order details and the Product ID of the products that were ordered. The dictionary table, on the other hand, provides information about product category, subcategory and the name of the product. Your task is to enrich the data table by fetching the product name, category, and subcategory information from the dictionary table using a value lookup operation. This will allow you to analyze the orders table more comprehensively, as it will now contain additional information about products and their categories.*
 
 #### Steps to be executed by the student (max 6)
 
 *Each bulleted instruction is a complete sentence that describes a specific task.*
 
-- Step 1
-- Step 2
-- Step 3
-- ...
+- Step 1: Connect the orders table to the first port of the Value Lookup node
+- Step 2: Connect the Product dictionary table to the second port of the Value Lookup node
+- Step 3: Right click on the Value Lookup node and select “Configure” option to open the configuration dialog of the node
+- Step 4: In the Lookup column select “Product ID”, similarly in the Key column select “ProductID”
+- Step 5: In the Output section, keep the columns Category, Sub-Category, Product Name in the “Includes” list and push the “ProductID” column to the “Excludes” list as we already have the “Product ID” column in the data table
+- Step 6: Now press “Ok” and check the output table, it will contain the orders data along with the columns from dictionary table  
+
 
 #### Exercise question:
 *This is a question presented to learners to check if the steps above were properly completed. It can be a multiple choice question or a question with a 1-3 word answer. It is often not possible to check if all the steps are completed, in this case; the priority is to check that the learner meets the learning objective.*
