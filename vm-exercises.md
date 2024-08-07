@@ -26,8 +26,6 @@
 
 #### Steps to be executed by the student (max 6)
 
-*Each bulleted instruction is a complete sentence that describes a specific task.*
-
 - Step 1: Connect the orders table to the first port of the Value Lookup node
 - Step 2: Connect the Product dictionary table to the second port of the Value Lookup node
 - Step 3: Right click on the Value Lookup node and select “Configure” option to open the configuration dialog of the node
@@ -37,11 +35,13 @@
 
 
 #### Exercise question:
-*This is a question presented to learners to check if the steps above were properly completed. It can be a multiple choice question or a question with a 1-3 word answer. It is often not possible to check if all the steps are completed, in this case; the priority is to check that the learner meets the learning objective.*
+*Now that you have completed the value lookup, select the OrderID associated with the Product name - Xerox 1887*
+- [ ] CA-2014-100293
+- [ ] CA-2014-100090
+- [ ] CA-2014-100328
+- [ ] CA-2014-100363
 
-#### End goal:
 
-*Add an image of the final visualization here.*
 
 ## 2nd VM Exercise
 
@@ -56,25 +56,23 @@
 
 #### Learning Objective
 
-*One measurable learning objective that this exercise assesses*
+*Perform Full Outer Join operation to get extensive details on products and orders*
 
 #### Context
 
-*3 - 4 sentence description of why it’s important to learn how to do this task (linking back to the learning objective). Explain how this would be used in a real-life situation. Why is it useful, what problem does it solve?*
+*You are given two tables: the Orders table and the Products table. The Orders table includes information such as order ID, product ID, and pin codes, while the Products table provides detailed information about various products. To gain a comprehensive understanding of the orders and the products that were ordered and those that were not, you are asked to perform a full outer join on these tables. This will create a new table that contains information on all orders and all products, allowing you to explore the range of products that were ordered and those that were not*
 
 #### Steps to be executed by the student (max 6)
 
-*Each bulleted instruction is a complete sentence that describes a specific task.*
-
-- Step 1
-- Step 2
-- Step 3
-- ...
+- Step 1: Connect the Orders table to the first port of the Joiner node and this table will be termed as left table, similarly connect the Products table to the second port of the Joiner node and this table will be termed as right table 
+- Step 2: Right click on the Joiner node and select “Configure” option to open the configuration dialog of the node
+- Step 3: In the “left table” select the “Product ID” column, similarly in the right table select “Product ID” column as you intend to join these tables on Product ID
+- Step 4: In the “Include in Output” section, select all the three options “Matching rows”, “Left unmatched rows” and “Right unmatched rows” and also notice the venn diagram, both the circles are yellow.  
+- Step 5: Now select the all the columns from the left table into the “Includes” list and similarly select all the columns from the Products table into the “Includes” list except the “Product ID” column as you already have it in the left table   
+- Step 6: Press “Ok” and check the output table it will be an extensive table containing all the columns from both the tables and has detailed information on all orders and products
 
 #### Exercise question:
 *This is a question presented to learners to check if the steps above were properly completed. It can be a multiple choice question or a question with a 1-3 word answer. It is often not possible to check if all the steps are completed, in this case; the priority is to check that the learner meets the learning objective.*
 
-#### End goal:
 
-*Add an image of the final visualization here.*
 
