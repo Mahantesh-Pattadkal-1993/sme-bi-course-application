@@ -35,13 +35,13 @@
 
 
 #### Exercise question:
-*Now that you have completed the value lookup, select the OrderID associated with the Product name - Xerox 1887*
+*Now that you have completed the value lookup, select the OrderID associated with the Product name - "Xerox 1887"*
 - [ ] CA-2014-100293
 - [ ] CA-2014-100090
 - [ ] CA-2014-100328
 - [ ] CA-2014-100363
 
-
+*Answer: CA-2014-100293*
 
 ## 2nd VM Exercise
 
@@ -72,7 +72,15 @@
 - Step 6: Press “Ok” and check the output table it will be an extensive table containing all the columns from both the tables and has detailed information on all orders and products
 
 #### Exercise question:
-*This is a question presented to learners to check if the steps above were properly completed. It can be a multiple choice question or a question with a 1-3 word answer. It is often not possible to check if all the steps are completed, in this case; the priority is to check that the learner meets the learning objective.*
+*Now that you have joined orders and products table, select the product name(s) that do not have an OrderID corresponding to it*
+- [ ] Bosch Desk Table
+- [ ] Blinder Clips by OIC
+- [ ] Ultra Door Push Plate
+- [ ] Ultra Window Push Plate 
+
+
+*Answer: Bosch Desk Table and Ultra Window Push Plate*
+
 
 
 
